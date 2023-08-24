@@ -9,14 +9,18 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('service_z7ay0dq', 'template_0u94gsv', form.current, 'mBnE10oPcwccEdFWudo2Q')
+        emailjs.sendForm(
+            'service_z7ay0dq', 
+            'template_f6la5l6', 
+             form.current,
+            'mjPTgSKBFkO6cHarb'
+            )
           .then((result) => {
               console.log(result.text);
-               e.targer.reset();
+              console.log("message sent");
+               e.target.reset();
               alert('Email sent!');
 
           }, (error) => {
@@ -25,22 +29,25 @@ const Contact = () => {
       };
 
   return (
-   <section id='contactPage'>
-    <div id='contact'>
-        <h1 className="contactPageTitle">Contact Me</h1>
-        <span className="contactDesc">Please Fill out the form below to discuss work opportunities.</span>
-        <form className="contactForm" ref={form} onSubmit={sendEmail}>
-           <input type="text" className="name" placeholder='Your Name' name='your_name'/>
-           <input type="email" className="email" placeholder='Your email' name='your_email' />
-           <textarea className='msg' name="message"  rows="5" placeholder='Your message' ></textarea>
-           <button type="submit" value='Send' className="submitBtn" name=''>Submit</button>
-           <div className="links">
+     <section id='contactPage'>
+        <div id='contact'>
+            <h1 className="contactPageTitle">Contact Me</h1>
+            
+            <span className="contactDesc">Please Fill out the form below to discuss work opportunities.</span>
+
+            <form className="contactForm" ref={form} onSubmit={sendEmail}>
+             <input type="text"  className="name"  placeholder='Your Name'  name='name'/>
+             <input type="email" className="email" placeholder='Your email' name='email'/>
+             <textarea className='msg' name="message"  rows="5" placeholder='Your message' ></textarea>
+             <button type='submit' value='Send' className="submitBtn">Submit</button>
+            
+            <div className="links">
             <img src={FacebookIcon} alt="Facebook" className="link" />
-            <img src={twitterIcon} alt="Twitter" className="link" />
-            <img src={GitHubIcon} alt="GitHub" className="link" />
+            <img src={twitterIcon}  alt="Twitter"  className="link" />
+            <img src={GitHubIcon}   alt="GitHub"   className="link" />
             <img src={LinkedInIcon} alt="LinkedIn" className="link" />
            </div>
-        </form>
+           </form>
 
     </div>
    </section>
