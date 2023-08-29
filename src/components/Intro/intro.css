@@ -7,6 +7,15 @@
     position: relative;
 }
 
+.topText{
+    /* background-color: rgb(40, 40, 40); */
+    text-align: center;
+    height: 10vh;
+    padding-top: 4vh;
+    color: rgb(118, 146, 75);
+    font-style: italic;
+
+}
 .bg{
     position: absolute;
     top: 1rem;
@@ -20,7 +29,7 @@
 
 .introContent{
     height: 75vh;
-    width:50vw;
+    width:100%;
     padding: 2rem;
     font-size: 3rem;
     font-weight: 700;
@@ -29,18 +38,19 @@
     flex-direction: column;
     justify-content: center;
     background-color: rgb(40, 40, 40);
-    border-radius: 10%;
-    z-index: -1;
-    
+    border-radius: 0.9%;
+    text-align: center;   
 }
 
 .hello{
     font-size: 1.75rem;
     font-weight: 200;
+    
 }
 
 .introName{
     color: greenyellow;
+  
 }
 
 .introPara{

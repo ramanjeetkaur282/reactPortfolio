@@ -1,0 +1,32 @@
+.certification-section {
+    margin: 20px;
+    justify-content: center;
+    
+  }
+  
+  .certification-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .certification-tile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .certification-tile img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .certification-tile a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+  }
+  
