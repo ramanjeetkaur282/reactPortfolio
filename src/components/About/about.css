@@ -31,7 +31,7 @@
   .column-2 h2{
     font-family:fantasy;
     text-decoration: wavy;
-    text-shadow: 3px 3px 3px #008080;
+    text-shadow: 1px 1px 1px #008080;
   }
   .column-2 h3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -68,7 +68,7 @@
   .column-3 h2{
     font-family:fantasy;
     text-decoration: wavy;
-    text-shadow: 3px 3px 3px #008080;
+    text-shadow: 1px 1px 1px #008080;
   }
 
   .column-3 p{

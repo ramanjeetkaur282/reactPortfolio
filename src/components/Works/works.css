@@ -17,7 +17,7 @@
     position: relative; 
     font-family:fantasy;
     text-decoration: wavy;
-    text-shadow: 3px 3px 3px #008080;
+    text-shadow: 1px 1px 1px #008080;
 }
 
 .wheader::before{
