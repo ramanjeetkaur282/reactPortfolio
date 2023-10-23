@@ -5,7 +5,7 @@ import './intro.css';
 const Intro = () => {
     
     const handleDownload = () => {
-    const pdfPath = process.env.PUBLIC_URL + '/Resume.pdf';
+    const pdfPath = process.env.PUBLIC_URL + '/RAMANJEET KAUR -Web Development.pdf';
     window.open(pdfPath, '_blank');
     }
 
