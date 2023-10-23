@@ -1,74 +1,85 @@
+:root {
+  --primary-color:#008080; /* Define your primary color */
+  --secondary-color:#cf7e7e; /* Define your secondary color */
+  --tertiary-color:#98FB98;
+  --fourth-colr:#FF6B6B;   
+}
 #skills{
     overflow: hidden;
+    white-space: none;
     width: 100vw;
-    max-width: 65rem;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     margin: 0 auto;
+    font-size: 30px;   
 }
 
-.skillTitle{
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
+.sheader::before{
+  content: "";
+  position: absolute;
+  bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+  left: 0;
+  width: 47%; /* Line extends to the maximum width of the container */
+  border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
 }
 
-.skillDes{
-    font-weight: 300;
-    font-size: 1rem;
-    max-width: 50rem;
-    padding: 0 2rem;
-
+.sheader::after{
+  content: "";
+  position: absolute;
+  bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+  right: 0;
+  width: 47%; /* Line extends to the maximum width of the container */
+  border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
+}
+.sheader {
+  text-align: center;
+  position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+  padding: 0 0px; /* Adjust padding as needed */
+  font-family:fantasy;
+  text-decoration: wavy;
+  text-shadow: 3px 3px 3px #008080;
 }
 
-.skillBars{
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
+.spara{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: cursive;
 }
-
-.skillBar{
+.icon-grid {
     display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
-    background: rgb(50, 50, 50);
+    flex-wrap: wrap;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    /* background-color: #065757;  */
+    
 }
-
-.skillBarImg{
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem;
+.icons{
+  display: flex;
+  flex-wrap:wrap ;
 }
-
-.skillBarText>p{
-  font-size: 0.9rem;
-  font-weight: 200;
-
+.icon-pack{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
-@media screen and (max-width:720px) {
-    .skillBarText>p{
-        font-size: 2vw;
-    }    
+.icon-pack span{
+  font-family: cursive;
 }
+.icon:hover {
+    transform: scale(1.1); /* Increase size on hover */
+  }
 
-@media screen and (max-width:480px) {
-    .skillBarText>p{
-        font-size: 3vw;
+@media screen and (max-width: 768px) {
+ 
+    .icon-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
     }
-    .skillBarImg{
-        height: 2.25rem;
-        width: 2.25rem;
-    }
-    .skillBarText>h2{
-        font-size: 5vw;
-
-    }  
-}
+  }
+  @media screen and (max-width: 1400px){
+  .sheader::before{
+    width: 0%;
+  }
+  .sheader{
+    text-decoration: underline;
+  }
+  .sheader::after{
+    width: 0%;
+  }}

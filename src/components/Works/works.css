@@ -1,24 +1,44 @@
+:root {
+    --primary-color:#008080; /* Define your primary color */
+    --secondary-color:#cf7e7e; /* Define your secondary color */
+    --tertiary-color:#98FB98;
+    --fourth-colr:#FF6B6B;   
+  }
 #works{
-    min-height: calc(100vh-4rem);
     width: 100vw;
-    max-width: 60rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    font-size: 30px;
     text-align: center;
 }
 
-.worksTitle{
-    margin: 1rem 0;
-    font-size: 3rem;
+.wheader {
+    text-align: center;
+    position: relative; 
+    font-family:fantasy;
+    text-decoration: wavy;
+    text-shadow: 3px 3px 3px #008080;
 }
 
-.worksDes {
-    font-weight: 300;
-    font-size: 1rem;
-    max-width: 45rem;
+.wheader::before{
+    content: "";
+    position: absolute;
+    bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+    left: 0;
+    width: 42%; /* Line extends to the maximum width of the container */
+    border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
+  }
+ .wheader::after{
+    content: "";
+    position: absolute;
+    bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+    right: 0;
+    width: 42%; /* Line extends to the maximum width of the container */
+    border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
+  }
+.work{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .worksImgs{
@@ -27,23 +47,36 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    max-width: 65rem;
+    position: relative;
 }
 
 .worksImg{
     object-fit: cover;
     height:20rem;
-    margin: 0.5rem;
+    margin: 0.5rem; 
+    filter: blur(0.5px);
+    border-radius: 10px;
+    z-index: -1;
 }
 
-.worksBtn{
-    padding: 0.5rem 2.5rem;
-    border: none;
-    border-radius: 2rem;
-    background: white;
-    font-size: 1rem;
-    margin: 3rem 0;
+.worksImg:hover{
+    filter: none;
+    transform: scale(1.1);
 }
+.image-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: emoji;
+  }
+.image-text:hover{
+    transform: scale(1.1);
+    color:var(--tertiary-color) ;
+}
+
+
 
 @media screen and (max-width:585px) {
     .worksImg{
@@ -51,3 +84,14 @@
     }
     
 }
+
+@media screen and (max-width: 1400px){
+    .wheader::after{
+      width: 0%;
+    }
+    .wheader{
+      text-decoration: underline;
+    }
+    .wheader::before{
+      width: 0%;
+    }}

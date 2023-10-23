@@ -1,7 +1,15 @@
+:root {
+    --primary-color:#008080; /* Define your primary color */
+    --secondary-color:#cf7e7e; /* Define your secondary color */
+    --tertiary-color:#98FB98;
+    --fourth-colr:#FF6B6B;   
+    --fifth-colr:#2b2d2d;   
+  }
+
 .navbar{
     height: 5rem;
     width:100vw;
-    max-width: 75rem;
+    max-width: -webkit-fill-available;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
@@ -10,8 +18,13 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    background: rgb(30, 30, 30);
+    background: var(--fifth-colr);
 }
+
+.flex-grow {
+    flex-grow: 1; /* Expand and push "desktopMenu" items to the end */
+  }
+
 
 .logo{
     object-fit: cover;
@@ -19,10 +32,18 @@
     width: 7rem;
   
 }
+.navItem {
+margin-right: 3rem;
+cursor: pointer;
+font-family:fantasy;
+text-decoration: wavy;
+font-size: 1.5rem;
+}
 
 .desktopMenuListItem{
     margin: 1rem;
     cursor: pointer;
+
 }
 
 .desktopMenuListItem:hover{
@@ -32,17 +53,22 @@
 }
 
 .desktopMenuBtn{
-    background: white;
+    background: var(--secondary-color);
     color: black;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
-    border-radius: 2rem;
-
+    margin-right: 25px;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-family:fantasy;
+    text-decoration: wavy;
+    font-size: 1.2rem;
 }
-
+.desktopMenuBtn:hover{
+    background-color: var(--fourth-colr);
+}
 .desktopMenuImg{
     object-fit: cover;
     height: 1rem;
@@ -51,15 +77,14 @@
 }
 
 .active{
-    color: greenyellow;
-    border-bottom: 3px solid yellowgreen;
+    color: var(--tertiary-color);
+    border-bottom: 3px solid var(--tertiary-color);
     padding-bottom: 0.5rem;
 }
 .mobMenu{
     display: none;
     object-fit: cover;
     height: 1.8rem;
-
 }
 
 .navMenu{

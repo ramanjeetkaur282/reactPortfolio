@@ -1,21 +1,73 @@
-.certification-section {
+:root {
+  --primary-color:#008080; /* Define your primary color */
+  --secondary-color:#cf7e7e; /* Define your secondary color */
+  --tertiary-color:#98FB98;
+  --fourth-colr:#FF6B6B;   
+}
+#certificationSection {
     margin: 20px;
     justify-content: center;
-    
+    font-size: 30px;
+  }
+
+  .cheader::before{
+    content: "";
+    position: absolute;
+    bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+    left: 0;
+    width: 39%; /* Line extends to the maximum width of the container */
+    border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
+  }
+  .cheader::after{
+    content: "";
+    position: absolute;
+    bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+    right: 0;
+    width: 39%; /* Line extends to the maximum width of the container */
+    border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
+  }
+  .cheader {
+    text-align: center;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    padding: 0 0px; /* Adjust padding as needed */
+    font-family:fantasy;
+    text-decoration: wavy;
+    text-shadow: 3px 3px 3px #008080;
   }
   
+
+  .h2{
+    text-align: center;
+    font-size: 3rem;
+  }
   .certification-tiles {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 2rem;
   }
   
+  .certification-tiles-2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+
   .certification-tile {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    width: 200px;
+    width: 300px;
+  }
+
+  .certification-tile:hover{
+    transform: scale(1.1);
   }
   
   .certification-tile img {
@@ -26,7 +78,35 @@
   
   .certification-tile a {
     display: block;
-    color: blue;
+    font-size: 18px;
     text-decoration: none;
+    color: white;
   }
   
+  .blur-background {
+    filter: blur(5px);
+    display: none; /* Adjust the blur radius as needed */
+    /* transition: filter 0.3s ease; Add a smooth transition effect */
+  }
+  
+  @media screen and (max-width: 1620px) {
+    .cheader::before{
+      width: 35%;
+    }
+    .cheader::after{
+      width: 35%;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .cheader::before{
+      width: 0%;
+    }
+    .cheader{
+      text-decoration: underline;
+    }
+    .cheader::after{
+      width: 0%;
+    }
+  }
+
