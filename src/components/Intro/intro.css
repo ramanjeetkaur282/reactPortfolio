@@ -18,6 +18,7 @@
     background-image: url('./intro.jpg');
     background-size: cover;
     background-position: center;
+    font-size: 100;
 }
 
 .introContent{ 
