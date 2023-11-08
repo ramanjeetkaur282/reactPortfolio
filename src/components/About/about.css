@@ -1,0 +1,104 @@
+:root {
+    --primary-color:#008080; /* Define your primary color */
+    --secondary-color:#cf7e7e; /* Define your secondary color */
+    --tertiary-color:#98FB98;
+    --fourth-colr:#FF6B6B;   
+  }
+
+#about-me {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-weight: 100;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  .column-2 {
+    flex: 1;
+    padding: 20px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: none;
+    
+  }
+
+  .column-2 h2{
+    /* font-family:fantasy; */
+    text-decoration: wavy;
+    text-shadow: 1px 1px 1px #008080;
+  }
+  .column-2 h3{
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-weight: lighter;
+    color: #cf7e7e;
+  }
+
+  .column-2 span{
+    font-size: 17px;
+    color:snow;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  }
+  .column-2 p{
+    margin-bottom: 1rem;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  }
+
+  .column-2 .status{
+    font-size: 24px;
+    color: var(--fourth-colr);
+  }
+  .column-2 .role{
+    color: #98FB98;
+  }
+ 
+  .column-3 {
+    flex: 1;
+    padding: 20px;
+    text-align: start;
+    font-size: 20px;
+    font-weight: none;
+  }
+  
+  .column-3 h2{
+   
+    text-decoration: wavy;
+    text-shadow: 1px 1px 1px #008080;
+  }
+
+  .column-3 p{
+    font-size: 15px;
+  
+  }
+  
+  .profile-picture {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 6px 6px 8px var(--primary-color); 
+    
+  }
+  
+  @media screen and (max-width:840px) {
+    #about-me {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  @media screen and (max-width:480px){
+    #about-me {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }

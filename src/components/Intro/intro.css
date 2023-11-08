@@ -1,0 +1,125 @@
+:root {
+    --primary-color:#008080; /* Define your primary color */
+    --secondary-color:#cf7e7e; /* Define your secondary color */
+    --tertiary-color:#98FB98;
+    --fourth-colr:#FF6B6B;   
+  }
+
+#intro {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow:auto;
+    position: relative;
+    height: 100vh;
+    background-image: url('./intro.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 100;
+}
+
+.introContent{ 
+    width:100%; 
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;  
+}
+
+.hello{
+    font-size: 5rem;
+    font-weight: 500;    
+    color: #FF6B6B;
+    text-shadow: 3px 3px 3px black;
+}
+
+.introName{
+    color: white ;
+    font-weight: 400;
+    font-size: 100px;
+    text-decoration: wavy;
+    text-shadow: 1px 1px 1px hsla(260,11%,85%,1);
+    font-family: none;  
+}
+
+.introName:hover{
+    color: var(--tertiary-color) ;
+    
+}
+
+.btn{ 
+    margin: 1rem 0;
+    border: 2px solid var(--fourth-colr);
+    color:white;
+    border-radius: 0.5rem;
+    width: 150px; 
+    height: 50px; 
+    padding: 0.75rem 1rem;
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px black; 
+}
+
+.btnResume{ 
+    margin-right: 25px;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--fourth-colr);
+    border-radius: 0.5rem;
+    color:white;
+    width: 150px; /* Set the width */
+    height: 50px; /* Set the height */
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px black; 
+
+}
+
+.btnResume:hover{
+  background-color: var(--fourth-colr);
+}
+
+.btn:hover{
+    background-color: var(--fourth-colr);
+  }
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem ;
+}
+.btnResumeImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem ;
+}
+
+@media screen and (max-width:840px) {
+    #intro {
+        background-size: cover;
+        background-position: center;
+      }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #intro {
+        background-size: cover;
+        background-position: center;
+      }
+      
+   
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5rem;
+    }
+}

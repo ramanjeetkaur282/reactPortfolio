@@ -1,0 +1,86 @@
+:root {
+  --primary-color:#008080; /* Define your primary color */
+  --secondary-color:#cf7e7e; /* Define your secondary color */
+  --tertiary-color:#98FB98;
+  --fourth-colr:#FF6B6B;   
+}
+#skills{
+    overflow: hidden;
+    white-space: none;
+    width: 100vw;
+    font-size: 30px;   
+    font-weight: 100;
+}
+
+.sheader::before{
+  content: "";
+  position: absolute;
+  bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+  left: 0;
+  width: 46%; /* Line extends to the maximum width of the container */
+  border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
+}
+
+.sheader::after{
+  content: "";
+  position: absolute;
+  bottom: 50%; /* Adjust the vertical position of the line (50% centers it on the text) */
+  right: 0;
+  width: 46%; /* Line extends to the maximum width of the container */
+  border-bottom: 2px solid var(--primary-color); /* Line color and thickness */
+}
+.sheader {
+  text-align: center;
+  position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+  padding: 0 0px; /* Adjust padding as needed */
+  /* font-family:fantasy; */
+  text-decoration: wavy;
+  text-shadow: 1px 1px 1px #008080;
+}
+
+.spara{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: cursive;
+}
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    /* background-color: #065757;  */
+    
+}
+.icons{
+  display: flex;
+  flex-wrap:wrap ;
+}
+.icon-pack{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.icon-pack span{
+  font-family: cursive;
+}
+.icon:hover {
+    transform: scale(1.1); /* Increase size on hover */
+  }
+
+@media screen and (max-width: 768px) {
+ 
+    .icon-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+    }
+  }
+  @media screen and (max-width: 1400px){
+  .sheader::before{
+    width: 0%;
+  }
+  .sheader{
+    text-decoration: underline;
+  }
+  .sheader::after{
+    width: 0%;
+  }}
