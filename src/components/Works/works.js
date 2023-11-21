@@ -1,5 +1,6 @@
 import React from 'react';
 import './works.css';
+import Portfolio7 from '../../assets/todo-list.jpg';
 import Portfolio1 from '../../assets/todo2.jpg';
 import Portfolio2 from '../../assets2/Sweet-Tooth.jpg';
 import Portfolio4 from '../../assets2/Budget.jpg';
@@ -13,6 +14,11 @@ const Works= () => {
     <section id='works'>
         <h2 className='wheader'>My Projects</h2>
         <div className="worksImgs">
+            
+        <a className="work" href="https://react-quiz-self.vercel.app/" target="_blank" rel="noreferrer">
+               <img src={Portfolio7} alt="" className="worksImg" />
+               <div href="https://react-quiz-self.vercel.app/" className="image-text">Quiz App</div>
+            </a>
 
             <a className="work" href="https://todolist-zeta-eight.vercel.app/" target="_blank" rel="noreferrer">
                <img src={Portfolio1} alt="" className="worksImg" />
