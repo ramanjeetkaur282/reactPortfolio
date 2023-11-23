@@ -1,6 +1,6 @@
 import React from 'react';
 import './works.css';
-import Portfolio7 from '../../assets/todo-list.jpg';
+import Portfolio7 from '../../assets/quiz.jpg';
 import Portfolio1 from '../../assets/todo2.jpg';
 import Portfolio2 from '../../assets2/Sweet-Tooth.jpg';
 import Portfolio4 from '../../assets2/Budget.jpg';

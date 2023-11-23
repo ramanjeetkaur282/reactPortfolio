@@ -11,6 +11,7 @@ import {Element} from 'react-scroll';
 
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [ selectedSection, setSelectedSection] = useState('intro');
   return (
     <div className="App">
