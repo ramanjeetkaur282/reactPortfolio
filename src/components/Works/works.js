@@ -1,5 +1,7 @@
 import React from 'react';
 import './works.css';
+import Game from '../../assets/game-logo.png';
+import ReactConcepts from '../../assets/react-core-concepts.png';
 import Portfolio7 from '../../assets/quiz.jpg';
 import Portfolio1 from '../../assets/todo2.jpg';
 import Portfolio2 from '../../assets2/Sweet-Tooth.jpg';
@@ -9,12 +11,22 @@ import Portfolio6 from '../../assets2/Food.jpg';
 
 
 const Works= () => {
-
+ 
   return (
     <section id='works'>
         <h2 className='wheader'>My Projects</h2>
         <div className="worksImgs">
             
+      <a className="work" href="https://tic-tac-toe-hazel-six.vercel.app/" target="_blank" rel="noreferrer">
+      <img src={Game} alt="" className="worksImg" />
+      <div href="https://tic-tac-toe-hazel-six.vercel.app/" className="image-text">Tic-Tac-Toe App</div>
+      </a>
+         
+            <a className="work" href="https://react-start-iota.vercel.app/" target="_blank" rel="noreferrer">
+               <img src={ReactConcepts} alt="" className="worksImg" />
+               <div href="https://react-start-iota.vercel.app/" className="image-text">React Concepts</div>
+            </a>
+
         <a className="work" href="https://react-quiz-self.vercel.app/" target="_blank" rel="noreferrer">
                <img src={Portfolio7} alt="" className="worksImg" />
                <div href="https://react-quiz-self.vercel.app/" className="image-text">Quiz App</div>
@@ -49,5 +61,6 @@ const Works= () => {
     </section>
   )
 }
+
 
 export default Works;

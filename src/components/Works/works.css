@@ -1,3 +1,4 @@
+
 :root {
     --primary-color:#008080; /* Define your primary color */
     --secondary-color:#cf7e7e; /* Define your secondary color */
@@ -20,7 +21,6 @@
     text-decoration: wavy;
     text-shadow: 1px 1px 1px #008080;
 }
-
 .wheader::before{
     content: "";
     position: absolute;
@@ -77,8 +77,6 @@
     color:var(--tertiary-color) ;
 }
 
-
-
 @media screen and (max-width:585px) {
     .worksImg{
         height: 48vw;
@@ -87,6 +85,7 @@
 }
 
 @media screen and (max-width: 1400px){
+
     .wheader::after{
       width: 0%;
     }
@@ -96,3 +95,5 @@
     .wheader::before{
       width: 0%;
     }}
+
+    
