@@ -5,7 +5,7 @@ import './intro.css';
 const Intro = () => {
     
     const handleDownload = () => {
-    const pdfPath = process.env.PUBLIC_URL + '/November.pdf';
+    const pdfPath = process.env.PUBLIC_URL + '/Dec 20,2023.pdf';
     window.open(pdfPath, '_blank');
     }
 
