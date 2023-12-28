@@ -20,9 +20,7 @@ const Works= () => {
     <section id='works'>
         <h2 className='wheader'>My Projects</h2>
         <div className="worksImgs">
-
-        
-      
+    
       <a className="work" href="https://react-07-place-picker.vercel.app/" target="_blank" rel="noreferrer">
       <img src={Placepicker} alt="" className="worksImg" />
       <div href="https://react-07-place-picker.vercel.app/" className="image-text">PlacePicker App</div>
@@ -87,6 +85,5 @@ const Works= () => {
     </section>
   )
 }
-
 
 export default Works;
